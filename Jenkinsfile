@@ -19,7 +19,7 @@ node {
     stage("Deployment") {
       sh "chmod +x ./gradlew"
       sh 'nohup ./gradlew bootRun -Dserver.port=8080 &'
-      sh 'echo #!asdf2580 | sudo docker login -u becka.kg99@gmail.com --password-stdin'
+      sh 'echo qweASD_123 | sudo docker login -u becka.kg99@gmail.com --password-stdin'
       sh 'sudo docker build -t pwoakk/restapidemo:1.0 .'
     }
     stage('Push Docker Image') {
@@ -30,6 +30,6 @@ node {
                 image.push('1.0')
             }
         }
-}
-}
+    }
+  }
 }
