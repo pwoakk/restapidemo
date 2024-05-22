@@ -1,6 +1,6 @@
 node {
   stage("Clone the project") {
-    git branch: 'main', url: 'https://github.com/daumsimac/restapidemo.git'
+    git branch: 'master', url: 'https://github.com/pwoakk/restapidemo.git'
   }
 
   stage("Compilation") {
